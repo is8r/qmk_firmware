@@ -29,19 +29,19 @@ enum layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [DEFAULT] = LAYOUT(
-        LT(RAISE, KC_F5), KC_KP_7, LT(LOWER, KC_PSCR),
-        KC_KP_0, KC_KP_1, KC_KP_3
+        LT(RAISE, KC_KP_5), KC_KP_7, LT(LOWER, KC_KP_0),
+        KC_KP_9, KC_KP_1, KC_KP_3
     ),
     [RAISE] = LAYOUT(
         _______, KC_KP_8, MO(ADJUST),
         KC_KP_4, KC_KP_2, KC_KP_6
     ),
     [LOWER] = LAYOUT(
-        MO(ADJUST), _______, _______,
-        _______, _______, _______
+        MO(ADJUST), KC_UP, _______,
+        KC_LEFT, KC_DOWN, KC_RIGHT
     ),
     [ADJUST] = LAYOUT(
-        _______, KC_UP, _______,
-        KC_LEFT, KC_DOWN, KC_RIGHT
+        _______, _______, _______,
+        _______, _______, _______
     )
 };
